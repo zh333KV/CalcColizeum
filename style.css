@@ -55,7 +55,7 @@ body {
     background-color: #1f1f1f;
 }
 
-h1{
+h1 {
     font-size: 52px;
 }
 
@@ -66,7 +66,7 @@ header {
     padding: 20px;
 }
 
-header div { 
+header div {
     width: 75px;
 }
 
@@ -82,14 +82,14 @@ main {
     gap: 100px;
 }
 
-.first-sec{
+.first-sec {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
-input{
+input {
     border-radius: 15px;
     border: 0;
     font-size: 30px;
@@ -98,7 +98,7 @@ input{
     height: 50px;
 }
 
-.div{
+.div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,23 +110,24 @@ input{
     font-weight: 600;
 }
 
-.second-sec{
+.second-sec {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-.second-sec span{
+.second-sec span {
     font-size: 30px;
 }
 
-.second-sec button{
+.second-sec button {
     font-size: 30px;
     font-weight: 500;
     border-radius: 15px;
     padding: 10px 40px;
     cursor: pointer;
+    color: #1f1f1f;
     border: none;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -136,11 +137,11 @@ input{
     transform: translateY(-3px);
 }
 
-.second-sec button:active{
+.second-sec button:active {
     opacity: 75%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     h1 {
         font-size: 32px;
         text-align: center;
@@ -193,6 +194,7 @@ input{
     .second-sec {
         gap: 20px;
     }
+
     .second-sec span {
         font-size: 30px;
     }
