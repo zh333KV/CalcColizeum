@@ -127,6 +127,7 @@ input{
     border-radius: 15px;
     padding: 10px 40px;
     cursor: pointer;
+    color: white;
     border: none;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -140,7 +141,7 @@ input{
     opacity: 75%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     h1 {
         font-size: 32px;
         text-align: center;
