@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Tektur";
+    font-weight: 400;
+    color: white;
+    background-color: #1f1f1f;
+}
+
+h1{
+    font-size: 52px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header div { 
+    width: 75px;
+}
+
+header img {
+    width: 75px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.first-sec{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+input{
+    border-radius: 15px;
+    border: 0;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    height: 50px;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div p {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.second-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.second-sec span{
+    font-size: 30px;
+}
+
+.second-sec button{
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.second-sec button:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.second-sec button:active{
+    opacity: 75%;
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header div {
+        width: 50px;
+    }
+
+    header img {
+        width: 50px;
+    }
+
+    main {
+        gap: 40px;
+    }
+
+    .first-sec {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        border-radius: 15px;
+        border: 0;
+        font-size: 20px;
+        width: 100px;
+        text-align: center;
+        height: 40px;
+    }
+
+    .div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div p {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .second-sec {
+        gap: 20px;
+    }
+    .second-sec span {
+        font-size: 30px;
+    }
+
+    .second-sec button {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+}
