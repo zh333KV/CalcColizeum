@@ -90,6 +90,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .first-sec div {
@@ -105,6 +106,12 @@ input {
     height: 50px;
 }
 
+.plus{
+    font-size: 50px;
+    line-height: 200%;
+    text-align: center;
+}
+
 .div {
     display: flex;
     flex-direction: column;
@@ -117,11 +124,28 @@ input {
     font-weight: 600;
 }
 
+.ans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
 .second-sec {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    
+}
+
+.block {
+    width: 1000px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 16px 2px rgba(69, 69, 69, 1) inset;
+    -moz-box-shadow: 0px 0px 16px 2px rgba(69, 69, 69, 1) inset;
+    box-shadow: 0px 0px 16px 2px rgba(69, 69, 69, 1) inset;
+    padding: 20px;
 }
 
 .second-sec span {
@@ -189,17 +213,30 @@ input {
 
     .div p {
         margin-bottom: 10px;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 600;
     }
 
+    .plus {
+        line-height: 100%;
+        font-size: 25px;
+    }
+
+    .ans {
+        font-size: 25px;
+    }
+    
     .second-sec {
         gap: 20px;
     }
 
     .second-sec span {
-        font-size: 30px;
+        font-size: 25px;
     }
+
+    .block {
+        width: 325px;
+    }   
 
     .second-sec button {
         font-size: 20px;

@@ -12,33 +12,44 @@
         <h1>Помощник</h1>
     </header>
     <main>
-        <div class="first-sec">
-            <div class="div">
-                <p>Стоимость за час</p>
-                <input tabindex="-1" value="6" maxlength="2" name="price per hour" id="price-per-hour"></input>
+        <div class="block">
+            <div class="first-sec">
+                <div class="div">
+                    <p>Стоимость за час</p>
+                    <input tabindex="-1" maxlength="2" id="price-per-hour"></input>
+                </div>
+                <div class="div">
+                    <p>Количество минут</p>
+                    <input tabindex="-1" maxlength="3" id="number-of-minutes"></input>
+                </div>
             </div>
-            <div class="div">
-                <p>Количество минут</p>
-                <input tabindex="-1" value="30" maxlength="3" name="Number of minutes " id="number-of-minutes"></input>
-            </div>
-        </div>
-        <div class="second-sec">
-            <button id="count">Рассчитать</button>
-            <span id="result">0</span>
-        </div>
-        <div class="first-sec">
-            <div class="div">
-                <p>Стоимость</p>
-                <input value="16" tabindex="-1" maxlength="2" name="price per hour" id="price"></input>
-            </div>
-            <div class="div">
-                <p>Скидка в процентах</p>
-                <input tabindex="-1" value="25" maxlength="2" name="Number of minutes " id="percent"></input>
+            <div class="second-sec">
+                <button id="count">Рассчитать</button>
+                <div class="ans">
+                    <p>Итого:&nbsp;</p>
+                    <span id="result">0</span>
+                </div>
             </div>
         </div>
-        <div class="second-sec">
-            <button id="count2">Рассчитать</button>
-            <span id="result2">0</span>
+        <div class="block">
+            <div class="first-sec">
+                <div class="div">
+                    <p>Стоимость</p>
+                    <input tabindex="-1" maxlength="2" id="price"></input>
+                </div>
+                <p class="plus">+</p>
+                <div class="div">
+                    <p>Скидка студента</p>
+                    <input readonly tabindex="-1" maxlength="2" id="percent"></input>
+                </div>
+            </div>
+            <div class="second-sec">
+                <button id="count2">Рассчитать</button>
+                <div class="ans">
+                    <p>Итого:&nbsp;</p>
+                    <span id="result2">0</span>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

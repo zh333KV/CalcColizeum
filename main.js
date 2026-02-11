@@ -24,9 +24,9 @@ document.addEventListener('keydown', (event) => {
 
 btn2.addEventListener('click', () => {
     const value1 = parseFloat(input3.value) || 0;
-    const value2 = parseFloat(input4.value) || 0;
 
-    const ans = value1*value2/100;
-
+    const discount = value1*25/100;
+    input4.value = discount;
+    const ans = value1 + discount;
     result2.textContent = ans.toFixed(2);
 });
