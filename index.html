@@ -5,30 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculation</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon.svg" type="image/x-icon">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon.png">
 </head>
 <body>
     <header>
-        <h1>Расчёт по минутам</h1>
+        <h1>Помощник</h1>
     </header>
     <main>
         <div class="first-sec">
             <div class="div">
                 <p>Стоимость за час</p>
-                <input maxlength="2" name="price per hour" id="price-per-hour"></input>
+                <input tabindex="-1" value="6" maxlength="2" name="price per hour" id="price-per-hour"></input>
             </div>
             <div class="div">
                 <p>Количество минут</p>
-                <input maxlength="3" name="Number of minutes " id="number-of-minutes"></input>
+                <input tabindex="-1" value="30" maxlength="3" name="Number of minutes " id="number-of-minutes"></input>
             </div>
         </div>
         <div class="second-sec">
             <button id="count">Рассчитать</button>
             <span id="result">0</span>
         </div>
+        <div class="first-sec">
+            <div class="div">
+                <p>Стоимость</p>
+                <input value="16" tabindex="-1" maxlength="2" name="price per hour" id="price"></input>
+            </div>
+            <div class="div">
+                <p>Скидка в процентах</p>
+                <input tabindex="-1" value="25" maxlength="2" name="Number of minutes " id="percent"></input>
+            </div>
+        </div>
+        <div class="second-sec">
+            <button id="count2">Рассчитать</button>
+            <span id="result2">0</span>
+        </div>
     </main>
     <footer>
-        <a href="https://www.linkedin.com/in/zh333kv/">Made by zh333kv</a>
+        <a tabindex="-1" href="https://www.linkedin.com/in/zh333kv/">Made by zh333kv</a>
     </footer>
     <script src="main.js"></script>
 </body>
