@@ -1,0 +1,1 @@
+This project serves as an assistant for the administrators of the Colizeum computer club. Administrators no longer need to use a calculator to calculate a discount or per-minute rate for a guest. All of this is implemented in my project. Enjoy it!
