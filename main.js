@@ -12,10 +12,12 @@ const resulta = document.getElementById("result-after");
 btn1.addEventListener('click', () => {
     const value1 = parseFloat(input1.value) || 0;
     const value2 = parseFloat(input2.value) || 0;
-
     const ans = value1/60*value2;
-
-    result1.textContent = ans.toFixed(2);
+    if (value1 < 0 || value2 < 0) {
+        result1.textContent = "Лимиты брадок";
+    } else {
+        result1.textContent = ans.toFixed(2);
+    }
 });
 
 document.addEventListener('keydown', (event) => {
@@ -30,6 +32,7 @@ btnb.addEventListener('click', () => {
     const ans = value1 + discount;
     if (value1 < 15 || value1 > 60) {
         resultb.textContent = "Лимиты брадок";
+        btnb.innerText = "+";
     } else {
         btnb.innerText = "+ " + discount;
         resultb.textContent = ans.toFixed(2);
