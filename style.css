@@ -111,12 +111,6 @@ input {
     height: 50px;
 }
 
-.plus {
-    font-size: 50px;
-    line-height: 200%;
-    text-align: center;
-}
-
 .div {
     display: flex;
     flex-direction: column;
@@ -125,13 +119,11 @@ input {
 }
 
 .div p {
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.ans {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#result-before,
+#result-after {
     font-size: 30px;
 }
 
