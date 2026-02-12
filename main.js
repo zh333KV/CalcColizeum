@@ -2,10 +2,12 @@ const input1 = document.getElementById("price-per-hour");
 const input2 = document.getElementById("number-of-minutes");
 const btn1 = document.getElementById("count");
 const result1 = document.getElementById("result");
-const input3 = document.getElementById("price");
-const input4 = document.getElementById("percent");
-const btn2 = document.getElementById("count2");
-const result2 = document.getElementById("result2");
+const inputb = document.getElementById("price-before");
+const btnb = document.getElementById("count-before");
+const resultb = document.getElementById("result-before");
+const inputa = document.getElementById("price-after");
+const btna = document.getElementById("count-after");
+const resulta = document.getElementById("result-after");
 
 btn1.addEventListener('click', () => {
     const value1 = parseFloat(input1.value) || 0;
@@ -22,11 +24,25 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-btn2.addEventListener('click', () => {
-    const value1 = parseFloat(input3.value) || 0;
-
+btnb.addEventListener('click', () => {
+    const value1 = parseFloat(inputb.value) || 0;
     const discount = value1*25/100;
-    input4.value = discount;
     const ans = value1 + discount;
-    result2.textContent = ans.toFixed(2);
+    if (value1 < 15 || value1 > 60) {
+        resultb.textContent = "Лимиты брадок";
+    } else {
+        btnb.innerText = "+ " + discount;
+        resultb.textContent = ans.toFixed(2);
+    }
+});
+
+btna.addEventListener('click', () => {
+    const value1 = parseFloat(inputa.value) || 0;
+    const ans = value1 / 1.25;
+    const discount = value1 - ans;
+    if (value1 < 18.75 || value1 > 75) {
+        resulta.textContent = "Лимиты брадок";
+    } else {
+        resulta.textContent = ans.toFixed(2)+ " + " + discount.toFixed(2) + " = " + value1;
+    }
 });

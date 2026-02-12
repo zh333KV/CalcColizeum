@@ -25,29 +25,22 @@
             </div>
             <div class="second-sec">
                 <button id="count">Рассчитать</button>
-                <div class="ans">
-                    <p>Итого:&nbsp;</p>
-                    <span id="result">0.00</span>
-                </div>
+                <span id="result">0.00</span>
             </div>
         </div>
         <div class="block">
             <div class="first-sec">
                 <div class="div">
-                    <p>Стоимость</p>
-                    <input tabindex="-1" maxlength="2" id="price"></input>
+                    <p>Пополняет</p>
+                    <input tabindex="-1" maxlength="2" id="price-before"></input>
+                    <button id="count-before">+</button>
+                    <p id="result-before">0.00</p>
                 </div>
-                <p class="plus">+</p>
                 <div class="div">
-                    <p>Скидка 25%</p>
-                    <input readonly tabindex="-1" maxlength="2" id="percent"></input>
-                </div>
-            </div>
-            <div class="second-sec">
-                <button id="count2">Рассчитать</button>
-                <div class="ans">
-                    <p>Итого:&nbsp;</p>
-                    <span id="result2">0.00</span>
+                    <p>Надо</p>
+                    <input tabindex="-1" maxlength="5" id="price-after"></input>
+                    <button id="count-after">?</button>
+                    <p id="result-after">0.00</p>
                 </div>
             </div>
         </div>

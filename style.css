@@ -91,7 +91,11 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.first-sec :last-child {
+    margin-bottom: 0;
 }
 
 .first-sec div {
@@ -107,7 +111,7 @@ input {
     height: 50px;
 }
 
-.plus{
+.plus {
     font-size: 50px;
     line-height: 200%;
     text-align: center;
@@ -117,12 +121,11 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .div p {
-    margin-bottom: 20px;
     font-size: 40px;
-    font-weight: 600;
 }
 
 .ans {
@@ -136,8 +139,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    
+    gap: 10px;
 }
 
 .block {
@@ -153,12 +155,13 @@ input {
     font-size: 30px;
 }
 
-#percent {
+#result-before,
+#result-after {
     background-color: #1f1f1f;
     color: white;
 }
 
-.second-sec button {
+button {
     font-size: 30px;
     font-weight: 500;
     border-radius: 15px;
@@ -169,12 +172,12 @@ input {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.second-sec button:hover {
+button:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     transform: translateY(-3px);
 }
 
-.second-sec button:active {
+button:active {
     opacity: 75%;
 }
 
@@ -195,7 +198,7 @@ input {
     .first-sec {
         display: flex;
         flex-direction: column;
-        gap: 10px;   
+        gap: 10px;
     }
 
     .first-sec div {
@@ -218,9 +221,8 @@ input {
     }
 
     .div p {
-        margin-bottom: 10px;
+        margin-bottom: 0;
         font-size: 25px;
-        font-weight: 600;
     }
 
     .plus {
@@ -231,9 +233,9 @@ input {
     .ans {
         font-size: 25px;
     }
-    
+
     .second-sec {
-        gap: 20px;
+        gap: 10px;
     }
 
     .second-sec span {
@@ -242,9 +244,9 @@ input {
 
     .block {
         width: 325px;
-    }   
+    }
 
-    .second-sec button {
+    button {
         font-size: 20px;
         padding: 8px 20px;
     }
